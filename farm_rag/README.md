@@ -8,14 +8,14 @@ Table of Contents
 5. Benefits of the Approach
 6. Conclusion
 
-1. Overview
+OVERVIEW 
 
 This notebook demonstrates the development of a multilingual question-answering system capable of responding in multiple languages, specifically showcasing functionality in Swahili and English. The system leverages a combination of Retrieval Augmented Generation (RAG) and an agent equipped with web search capabilities to provide comprehensive and up-to-date answers. The core idea is to first attempt to answer questions using a curated set of internal documents (RAG) and, if the internal knowledge is insufficient, to use a web search tool to find the relevant information. Translation capabilities are integrated to handle questions and provide answers in the user's preferred language.
 
-2. Motivation
+MOTIVATION
 The motivation behind this project is to build a question-answering system that is not limited by language barriers or static knowledge. By incorporating multilingual support, the system can serve a wider audience. The combination of RAG and an agent provides a robust approach: RAG offers efficient access to domain-specific information from known sources, while the agent's web search capability allows the system to address questions requiring current or external knowledge. This hybrid approach aims to deliver accurate and relevant answers from both internal and external information sources.
 
-3. Key Components
+KEY COMPONENTS
 The system is built upon several key components:
 
 1. Language Models (LLMs): The project utilizes the Google Generative AI models (specifically Gemini) for generating answers and powering the agent's reasoning.
@@ -34,7 +34,7 @@ The system is built upon several key components:
 
 8. Web Search Tool: The DuckDuckGoSearchRun tool is integrated into the agent to enable web search when needed.
 
-4. Methods
+METHODS
 
 The system follows the following workflow:
 
@@ -58,7 +58,7 @@ Translation to User Language: If the original question was not in English, the f
 
 Output: The final answer is presented to the user in their preferred language.
 
-5. Benefits of the Approach
+BENEFITS OF THE APPROACH
 This approach offers several benefits:
 
 Multilingual Support: The integrated translation allows the system to interact with users in languages other than English, expanding its accessibility.
@@ -71,6 +71,6 @@ Improved Accuracy: By prioritizing RAG when relevant documents exist, the system
 
 Flexibility: The modular nature of LangChain allows for easy integration of different LLMs, embedding models, vector stores, and tools.
 
-6. Conclusion
+CONCLUSION
 This project successfully demonstrates the creation of a multilingual question-answering system that effectively utilizes RAG and an intelligent agent with web search capabilities. The system can understand and respond to questions in different languages by translating them to English for processing and translating the final answer back to the user's language. The hybrid approach of prioritizing RAG and falling back to web search provides a robust and flexible solution for accessing and delivering information. This architecture can be further extended and refined by incorporating more sophisticated translation models, expanding the internal document base, and adding more specialized tools to the agent.
 
